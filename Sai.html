@@ -1,0 +1,558 @@
+
+<!-- Added Side nav bar -->
+
+
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="csrf-token" content="fWCpZ6C5E0a4jEGXkPVWbNugjf6YNVzgXXThLYNC">
+
+		<!-- title -->
+        <title>ComplyIndia - Company</title>
+        
+		<!-- Favicon -->
+		<link rel="icon" href="http://old.complyindia.in/images/logo.png" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="http://old.complyindia.in/images/logo.png" />
+
+		<!--Bootstrap css-->
+		<link rel="stylesheet" href="http://old.complyindia.in/assets/assets/plugins/bootstrap/css/bootstrap.min.css">
+
+		<!--Style css -->
+		<link href="http://old.complyindia.in/assets/assets/css/style.css" rel="stylesheet" />
+		<link href="http://old.complyindia.in/assets/assets/css/dark-style.css" rel="stylesheet" />
+		<link href="http://old.complyindia.in/assets/assets/css/skin-modes.css" rel="stylesheet">
+
+		<!-- P-scrollbar css-->
+		<link href="http://old.complyindia.in/assets/assets/plugins/p-scrollbar/p-scrollbar.css" rel="stylesheet" />
+		
+		<!--Horizontal menu-->
+		<link href="http://old.complyindia.in/assets/assets/plugins/horizontal-menu/horizontal-menu.css" rel="stylesheet" />
+
+		<!--Daterangepicker css-->
+		 <link href="E:/Date/script/head/date-picker.min.css" rel="stylesheet" />
+        <link href="E:/Date/script/head/daterangepicker.css" rel="stylesheet" />
+
+		<!-- Rightsidebar css -->
+		<link href="http://old.complyindia.in/assets/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+
+		<!-- Morris  Charts css-->
+		<link href="http://old.complyindia.in/assets/assets/plugins/morris/morris.css" rel="stylesheet" />
+
+		<!---Icons css-->
+		<link href="http://old.complyindia.in/assets/assets/css/icons.css" rel="stylesheet" />
+		<!--chosen css-->
+    	<link rel="stylesheet" href="http://old.complyindia.in/css/chosen.min.css" />
+    	<!-- Form-wizard css-->
+		<link href="http://old.complyindia.in/assets/assets/plugins/formwizard/smart_wizard.css" rel="stylesheet">
+		<link href="http://old.complyindia.in/assets/assets/plugins/formwizard/smart_wizard_theme_dots.css" rel="stylesheet">
+    	
+    	<!--overlay css-->
+    	<link rel="stylesheet" href="http://old.complyindia.in/editordash-css/assets/css/overlay.css" /> 
+
+		    	    		</head>
+
+	<body class=""><!--Global-Loader-->
+		<div id="global-loader">
+			<img src="http://old.complyindia.in/assets/assets/images/loader.svg" alt="loader">
+		</div>
+
+		<div class="page">
+			<div class="page-main">
+
+				<!--app-header-->
+				<div class="app-header header d-flex navbar-collapse">
+					<div class="container-fluid">
+						<div class="d-flex">
+							<a class="header-brand">
+							    <a href="http://old.complyindia.in/dashboard">
+        						    <img src="http://old.complyindia.in/assets/images/logo.png" class="header-brand-img main-logo" alt="CI logo">
+							    </a>
+        						<h3 style="margin-top:0.6%">Complyindia</h3>
+        						<!--<img src="http://old.complyindia.in/assets/assets/images/brand/logo-light.png" class="header-brand-img dark-main-logo" alt="CI logo">-->
+        						<!--<img src="http://old.complyindia.in/assets/assets/images/brand/icon-light.png" class="header-brand-img dark-icon-logo" alt="CI logo">-->
+        						<!--<img src="http://old.complyindia.in/assets/assets/images/brand/icon.png" class="header-brand-img icon-logo" alt="CI logo">-->
+        					</a>
+							<!--<div class="app-sidebar__toggle" data-toggle="sidebar">-->
+							<!--	<a class="open-toggle"  href="#"><i class="fe fe-align-left"></i></a>-->
+							<!--	<a class="close-toggle"  href="#"><i class="fe fe-x"></i></a>-->
+							<!--</div>-->
+							<div class="d-flex order-lg-2 ml-auto header-right">
+						<div class="d-md-flex">
+							<a href="#" class="nav-link icon full-screen-link">
+								<i class="fe fe-minimize fullscreen-button"></i>
+							</a>
+						</div>
+						<!--Navbar -->
+						<div class="dropdown header-profile mr-5">
+							<a class="nav-link pr-0 leading-none d-flex pt-1" data-toggle="dropdown" href="#">
+								<span class="avatar avatar-md brround cover-image" data-image-src="http://old.complyindia.in/assets/assets/images/users/female/images.png"></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+								<div class="drop-heading">
+									<div class="text-center">
+										<h5 class="text-dark mb-1">superadmin@complyindia.com</h5>
+									</div>
+								</div>
+								<div class="dropdown-divider m-0"></div>
+								<a class="dropdown-item" href="http://old.complyindia.in/profile"><i class="dropdown-icon fe fe-user"></i>Profile</a>
+								<a class="dropdown-item changepasswordli" data-toggle="modal" data-target="#changepasswordmodal" href="javascript:void(0);"><i class="dropdown-icon fa fa-cog"></i>Change Password</a>
+								<!--<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-mail"></i> Inbox</a>-->
+								<!--<a class="dropdown-item" href="#"><i class="dropdown-icon fe fe-unlock"></i> Look Screen</a>-->
+								<a class="dropdown-item" href="http://old.complyindia.in/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="dropdown-icon fe fe-power"></i> Log Out</a>
+                                <form id="logout-form" action="http://old.complyindia.in/logout" method="POST" style="display: none;">
+                                    <input type="hidden" name="_token" value="fWCpZ6C5E0a4jEGXkPVWbNugjf6YNVzgXXThLYNC">
+                                </form>
+								<div class="dropdown-divider"></div>
+								<div class="text-center dropdown-btn pb-3">
+									<div class="btn-list">
+										<a href="#" class="btn btn-icon btn-facebook btn-sm"><i class="icon icon-social-facebook"></i></a>
+										<a href="#" class="btn btn-icon btn-twitter btn-sm"><i class="icon icon-social-twitter"></i></a>
+										<a href="#" class="btn btn-icon btn-instagram btn-sm"><i class="icon icon-social-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+					</div>
+				</div>
+				<!--app-header end-->
+				<!--Header end-->
+				
+    <!--Horizontal-main --> 
+<div class="sticky"> 
+	<div class="horizontal-main hor-menu clearfix">
+		<div class="horizontal-mainwrapper container clearfix">
+			<!--Nav-->
+			<nav class="horizontalMenu clearfix">
+				<ul class="horizontalMenu-list">
+					<li aria-haspopup="true"><a href="http://old.complyindia.in/superadmin" class="sub-icon  "><i class="fe fe-codepen"></i>Admin Panel</a></li>
+					<li aria-haspopup="true"><a href="#" class="sub-icon "><i class="fe fe-airplay"></i> Dashboard <i class="fa fa-angle-down horizontal-icon"></i></a>
+						<ul class="sub-menu">
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/superadmin/dashboard">Comprehensive Dashboard</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/superadmin/activities_dashboard">Activities Dashboard</a></li>
+						</ul>
+					</li>
+					<li aria-haspopup="true"><a href="http://old.complyindia.in/superadmin/reports" class="sub-icon  "><i class="fa fa-tasks"></i>Reports</a></li>
+                    
+                    <li aria-haspopup="true"><a href="http://old.complyindia.in/formats" class="sub-icon  "><i class="fa fa-database"></i>Formats</a></li>
+
+					<li aria-haspopup="true"><a href="http://old.complyindia.in/departments" class="sub-icon  "><i class="fa fa-th"></i>Departments</a></li>
+
+                    <li aria-haspopup="true"><a href="http://old.complyindia.in/superadmin/tasks" class="sub-icon  "><i class="fa fa-tasks"></i>Task Scheduler</a></li>
+                    
+                    <li aria-haspopup="true"><a href="#" class="sub-icon "><i class="fe fe-bar-chart-2"></i>Status Tracker<i class="fa fa-angle-down horizontal-icon"></i></a>
+						<ul class="sub-menu">
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/cdm_status" class="sub-icon  ">CDM Tracker</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/ops_status" class="sub-icon  ">Operations Tracker</a></li>							
+						</ul>
+					</li>
+					<li aria-haspopup="true"><a href="#" class="sub-icon "><i class="fe fe-airplay"></i> Master <i class="fa fa-angle-down horizontal-icon"></i></a>
+						<ul class="sub-menu">
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/act">Acts</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/businessarea">Business Area</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/city">Cities</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/companies">Companies</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/companytype">Company Types</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/contractor-master">Contractors</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/industry">Industries</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/location-types">Location Types</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/state">States</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/regcompanies">One Time Company</a></li>
+						</ul>
+					</li>
+					<li aria-haspopup="true"><a href="#" class="sub-icon "><i class="fe fe-airplay"></i> Others <i class="fa fa-angle-down horizontal-icon"></i></a>
+						<ul class="sub-menu">
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/address-bulkupload">Bulk upload</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/sow">Sow</a></li>
+							<li aria-haspopup="true"><a href="http://old.complyindia.in/timesheet/dashboard">Timesheet</a></li>
+						</ul>
+					</li>
+				</ul> 
+			</nav>
+			<!--Nav-->
+		</div>
+	</div>
+</div>
+<!--Horizontal-main -->
+		    	<style>
+    body{ 
+    margin-top:40px; 
+}
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+</style>
+            <div class="container">
+        <div class="page-header">
+            <h1> Add Companies </h1>
+        </div>
+        <!-- Alert Error MSG -->
+        <div class="alert alert-danger d-none" id="ajaxerrormsg">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>                              
+    <ul class="autoscrollerrormsg ajaxerrors"> 
+    </ul>
+</div>
+<div class="alert alert-success d-none" id="ajaxsuccessmsg">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>                              
+    <p class="autoscrollerrormsg ajaxcreate"></p>   
+</div>
+<div class="alert alert-warning d-none" id="ajaxupdatemsg">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>                              
+    <p class="autoscrollerrormsg ajaxupdate"></p>   
+</div>
+
+        <!-- Alert Error MSG -->        
+        <!-- Table -->
+        <!-- PAGE CONTENT BEGINS -->
+        <div class="card">
+            <div class="card-header bg-info card-header-flat">
+                <h4 class="card-title lighter">Company Wizard</h4>
+                <span class="card-toolbar" style="position:absolute;right:30px">
+                    <a href="http://old.complyindia.in/companies" class="ahref btn btn-sm btn-dark no-border" id="backcompany">Back</a>
+                </span>
+            </div>
+            <div class="card-body">
+                <div>
+                    <div class="stepwizard">
+                        <ul class="stepwizard-row setup-panel">
+                            <li class="stepwizard-step companyinfo active ">
+                                <a href="http://old.complyindia.in/addCompany" type="button" class="btn btn-primary btn-circle">1</a>
+                                <p>Company Info</p>
+                            </li>
+                            <li class="stepwizard-step addressinfo  ">
+                                <a href="http://old.complyindia.in/addCompanyAddress" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                <p>Address Info</p>
+                            </li>
+                            <li class="stepwizard-step actapplicable  ">
+                                <a href="http://old.complyindia.in/addCompanyActs" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                <p>Acts Applicable</p>
+                            </li>
+                            <li class="stepwizard-step userdetials  ">
+                                <a href="http://old.complyindia.in/addCompanyUsers" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                                <p>User Details</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div><br>
+                <div class="step-content pos-rel">             
+                    <style>
+    .mandatory{
+        color: red;
+    }
+    .errorbox{
+        border:1px solid red;
+    }
+    .files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 30px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+.files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #92b0b3;
+ }
+.files{ position:relative}
+.files:after {  pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.color input{ background-color:#f1f1f1;}
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;  pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: " or drag images here. ";
+    display: block;
+    /*margin: 0 auto;*/
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+</style>
+<div class="step-pane active pb-0" data-step="1"  id="companyinfotab">  
+    <div class="card light bordered companytabstyle">
+        <div class="card-header text-info">
+            <div class="caption font-green">
+                <i class="fa fa-building-o font-green"></i>   
+                <span class="caption-subject bold uppercase"> Add Company Info</span>
+            </div> 
+        </div>
+        <div class="card-body" style="max-height: 300px;overflow: scroll;">
+            <form role="form" class="companytabform" method="post" action="http://old.complyindia.in/savecmpinfo" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="fWCpZ6C5E0a4jEGXkPVWbNugjf6YNVzgXXThLYNC">
+                <div class="form-body overflow-cymicroscroll">
+                    <div class="row">
+                     
+                    <div class="row">                                                   
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">Date of Incorporation <span class="mandatory">*</span></label>
+                                <div class="input-group">
+                                    <input name="incorporationdate"  
+                                    class="form-control date-picker incorporationdate"  
+                                    type="text" 
+                                    data-date-format="dd-mm-yyyy"
+                                     id="incorporationdate" 
+                                     placeholder="dd-mm-yyyy"
+                                    value="" 
+                                    autocomplete="off" />
+                                </div>
+                                                                
+                            </div>
+                        </div> -->
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">Date of Contract <span class="mandatory">*</span></label>
+                                <div class="input-group">
+                                    <input name="contractdate" class="form-control date-picker contractdate"  type="text" data-date-format="dd-mm-yyyy" id="contractdate" disabled=&quot;disabled&quot; placeholder="dd-mm-yyyy" value="" autocomplete="off" />
+                                </div>
+                                                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="control-label">Company End Date <span class="mandatory">*</span></label>
+                                <div class="input-group">
+                                    <input name="companyenddate" class="form-control date-picker companyenddate"  type="text" data-date-format="dd-mm-yyyy" id="companyenddate" placeholder="dd-mm-yyyy" autocomplete="off"/>
+                                </div>
+                                                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                <div class="card-actions pull-right">
+                    <button type="submit" class="btn btn-success saveform"><i class="ace-icon fa fa-check "></i>Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+                </div>     
+            </div><!-- /.widget-body -->
+        </div>
+    <!-- New Id STARTS-->
+    <div class="modal fade" id="adduserdetails">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <h4 class="modal-title bold uppercase font-yellow-casablanca">Company User</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="tabbable-line">
+                        <div class="form-body">
+                            <div class="row">
+                                <!--/span-->
+                                <div class="col-md-6 col-md-offset-3">
+                                    <div class="form-group">
+                                        <label class="control-label">Mail Id  <span>*</span></label>
+                                        <input type="email" class="form-control mailid" placeholder="Mail Id."> 
+                                    </div>
+                                </div>
+                                <!--/span-->                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn default"><i class="fa fa-plus"></i>Cancel</button>                
+                    <button type="button" class="btn seagreen" id="userinfosave"><i class="fa fa-check"></i>Save</button>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- New Id ENDS-->
+    <!--Confirmation box for delete START-->   
+    <div id="confirmation" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Delete the User</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bigger-110 center">
+                                These User Info will be permanently deleted and cannot be recovered.
+                            </div>
+                            <div class="space-6"></div>
+                            <p class="bigger-110 bolder center grey">
+                                <i class="ace-icon fa fa-hand-o-right blue bigger-120"></i>
+                                Are you sure?
+                            </p>
+                        </div>
+                        <!--/span-->                                                
+                    </div>                     
+                    <div class="modal-footer">
+                        <button type="button" class="btn default" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+                        <button type="button" class="btn  btn-delete red delete"  data-dismiss="modal"><i class="fa fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Confirmation box for delete ENDS-->   
+    <!-- Modal -->
+</div>
+				<!--Footer-->
+				<footer class="footer">
+					<div class="container">
+						<div class="row align-items-center flex-row-reverse">
+							<div class="col-lg-12 col-sm-12   text-center">
+								Copyright © 2020 <a href="#">ComplyIndia</a>.
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!-- End Footer-->
+			</div>
+		</div>
+		<!-- End Page -->
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+			<!-- Jquery js-->
+		<script src="http://old.complyindia.in/assets/assets/js/jquery-3.4.1.min.js"></script>
+
+		<!--chosen-->
+    	<script src="http://old.complyindia.in/js/chosen.jquery.min.js"></script>
+		<!--Bootstrap.min js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="http://old.complyindia.in/assets/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!--Jquery Sparkline js-->
+		<script src="http://old.complyindia.in/assets/assets/js/jquery.sparkline.min.js"></script>
+
+		<!-- Chart Circle js-->
+		<script src="http://old.complyindia.in/assets/assets/js/circle-progress.min.js"></script>
+
+		<!-- Star Rating js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!--Moment js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/moment/moment.min.js"></script>
+
+		<!-- Daterangepicker js-->
+		   <script src="E:/Date/script/bottom/date.min.js" rel="stylesheet" ></script>
+        <script src="E:/Date/script/bottom/range-picker.js" rel="stylesheet" ></script>
+		<!--Side-menu js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/sidemenu/sidemenu.js"></script>
+
+		<!-- P-scrollbar js-->
+		
+		
+
+		<!--Peitychart js -->
+		<script src="http://old.complyindia.in/assets/assets/plugins/peitychart/jquery.peity.min.js"></script>
+		<script src="http://old.complyindia.in/assets/assets/plugins/peitychart/peitychart.init.js"></script>
+
+		<!-- Rightsidebar js -->
+		<script src="http://old.complyindia.in/assets/assets/plugins/sidebar/sidebar.js"></script>
+
+		<!-- Charts js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/chart/chart.bundle.js"></script>
+		<script src="http://old.complyindia.in/assets/assets/plugins/chart/utils.js"></script>
+
+		<!--Morris  Charts js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/morris/raphael-min.js"></script>
+		<script src="http://old.complyindia.in/assets/assets/plugins/morris/morris.js"></script>
+
+		<!--Time Counter js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/counters/jquery.missofis-countdown.js"></script>
+		<script src="http://old.complyindia.in/assets/assets/plugins/counters/counter.js"></script>
+
+		<!-- Custom-charts js-->
+		
+
+		<!-- Custom js-->
+		<script src="http://old.complyindia.in/assets/assets/js/custom.js"></script>
+		<script src="http://old.complyindia.in/js/portal/validate.js?1907006390"></script>
+		<!-- Form-wizard js-->
+		<script src="http://old.complyindia.in/assets/assets/plugins/formwizard/jquery.smartWizard.js"></script>
+		<script src="http://old.complyindia.in/assets/assets/plugins/formwizard/fromwizard.js"></script>
+		 <!-- ECharts js -->
+		<script src="http://old.complyindia.in/assets/assets/plugins/echarts/echarts.js"></script>
+		<script>$.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+      });</script> 
+<script src="http://old.complyindia.in/js/portal/superAdmin/company.js?1942810568"></script>
+	</body>
+</html>
+			
